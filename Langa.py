@@ -71,7 +71,7 @@ async def handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(f"You said: '{update.message.text}'")
 
 def main():
-    application = ApplicationBuilder().token('7377395631:AAGF_7Y0FmPTSQA_Tv6KFyce1CIW8w5deXM').build()
+    application = ApplicationBuilder().token('YOURTOKEN').build()
     
     # Add handlers
     application.add_handler(CommandHandler("start", start))
